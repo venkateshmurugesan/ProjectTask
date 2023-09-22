@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="68205" started-at="2023-09-13T14:19:51Z" finished-at="2023-09-13T14:20:59Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="68205" started-at="2023-09-13T14:19:51Z" finished-at="2023-09-13T14:20:59Z">
+      <class name="org.flipkart.Task1">
+        <test-method status="PASS" signature="before()[pri:0, instance:org.flipkart.Task1@3fb6a447]" name="before" is-config="true" duration-ms="40470" started-at="2023-09-13T19:49:51Z" finished-at="2023-09-13T19:50:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:org.flipkart.Task1@3fb6a447]" name="beforeMethod" is-config="true" duration-ms="472" started-at="2023-09-13T19:50:32Z" finished-at="2023-09-13T19:50:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="test1()[pri:0, instance:org.flipkart.Task1@3fb6a447]" name="test1" duration-ms="26613" started-at="2023-09-13T19:50:32Z" finished-at="2023-09-13T19:50:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:org.flipkart.Task1@3fb6a447]" name="afterMethod" is-config="true" duration-ms="104" started-at="2023-09-13T19:50:59Z" finished-at="2023-09-13T19:50:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- org.flipkart.Task1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
