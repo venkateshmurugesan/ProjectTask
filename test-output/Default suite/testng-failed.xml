@@ -6,4 +6,16 @@
       <class name="org.flipkart.Task1"/>
     </classes>
   </test> <!-- Default test -->
+  <test name="Default test(failed)">
+    <classes>
+      <class name="org.flipkart.Task1">
+        <methods>
+          <include name="before"/>
+          <include name="beforeMethod"/>
+          <include name="test1"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- org.flipkart.Task1 -->
+    </classes>
+  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
