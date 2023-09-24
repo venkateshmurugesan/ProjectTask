@@ -51,7 +51,7 @@ public class Mainn extends Base {
 		List<WebElement> tabledata = table.findElements(By.tagName("td"));
 		List<WebElement> checkbox = driver.findElements(By.xpath("//input[@type='checkbox']"));
 		List<WebElement> tablerow = driver.findElements(By.xpath("//input[@type='button']"));
-//		click(tablerow.get(tablerow.size()-1));
+		click(tablerow.get(tablerow.size()-1));
 		click(checkbox.get(checkbox.size()-1));
 		Thread.sleep(10);
 		click(r.getCancel());
