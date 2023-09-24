@@ -81,6 +81,12 @@ public class POMBooking extends Base {
 	
 	@FindBy(xpath="//input[@name='order_no']")
 	private WebElement orderId;
+	
+	@FindBy(xpath="//a[text()='Booked Itinerary']")
+	private WebElement bookeditnerary;
+	
+	@FindBy(name="cancelall")
+	private WebElement cancel;
 
 	public WebElement getUsername() {
 		return username;
@@ -178,4 +184,13 @@ public class POMBooking extends Base {
 		return orderId;
 	}	
 
+	public WebElement getBookeditnerary() {
+		return bookeditnerary;
+	}
+
+	public WebElement getCancel() {
+		return cancel;
+	}
+	
+	
 }

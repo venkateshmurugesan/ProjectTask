@@ -49,8 +49,8 @@ public class Task1 extends Base {
 	    for(int i=0; i<iphones.size();i++) {
 	    	for(int j=i; j<=i;j++) {
 	    		
-//	    		System.out.println(iphones.get(i).getText());
-//	    		System.out.println(iphoneprz.get(j).getText());
+	    		System.out.println(iphones.get(i).getText());
+	    		System.out.println(iphoneprz.get(j).getText());
 	    		System.out.println(iphones.get(i).getText() +"="+ iphoneprz.get(j).getText());
 	    		
 	    	}
