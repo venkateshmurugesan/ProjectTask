@@ -1,4 +1,6 @@
 package org.adactin;
+import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 import org.main.Base;
 import org.openqa.selenium.Alert;
@@ -44,19 +46,31 @@ public class Mainn extends Base {
 		click(r.getBookNow());
 		implicitlywait(20);
 		System.out.println("-----Room Booked Sucessfully-----");
+		String currentOrderId = getAttribute(r.getOrderId());
+		System.out.println("-----Your Id is-----\n"+currentOrderId);
 		click(r.getBookeditnerary());
 		
-		List<WebElement> totaltable = driver.findElements(By.tagName("table"));
-		WebElement table = driver.findElement(By.xpath("//table[@cellpadding='5']"));
-		List<WebElement> tabledata = table.findElements(By.tagName("td"));
-		List<WebElement> checkbox = driver.findElements(By.xpath("//input[@type='checkbox']"));
-		List<WebElement> tablerow = driver.findElements(By.xpath("//input[@type='button']"));
-		click(tablerow.get(tablerow.size()-1));
-		click(checkbox.get(checkbox.size()-1));
-		Thread.sleep(10);
-		click(r.getCancel());
-		Alert a=driver.switchTo().alert();
-		a.accept();
+		List<WebElement> orderId = driver.findElements(By.xpath("//input[@type='button']"));
+		for (int i=0;i<orderId.size();i++) {
+			String currentId = orderId.get(i).getAttribute("value");
+			if(currentId.contains(currentOrderId)) {
+			System.out.println("Your booking Id is...\n"+currentId);
+			WebElement click = orderId.get(i);
+			click(click);
+			Alert a=driver.switchTo().alert();
+			a.accept();
+			System.out.println("Cancelled booking Id is\n"+currentId);
+			}
+		}		
 		System.out.println("-----Room Cancelled Sucessfully-----");
+
+//		List<WebElement> checkbox = driver.findElements(By.xpath("//input[@type='checkbox']"));
+//		click(checkbox.get(checkbox.size()-1));
+//		click(r.getCancel());
+//		Alert a=driver.switchTo().alert();
+//		a.accept();
+//		System.out.println("-----Room Cancelled Sucessfully-----");
+		
+		
 	}    
 	}
