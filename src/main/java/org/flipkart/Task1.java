@@ -1,6 +1,7 @@
 package org.flipkart;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 
@@ -44,7 +45,7 @@ public class Task1 extends Base {
 	    a.getSearch().click();
 	    List<WebElement> iphones = driver.findElements(By.xpath("//div[@class='_4rR01T']"));
 	    List<WebElement> iphoneprz = driver.findElements(By.xpath("//div[@class='_30jeq3 _1_WHN1']"));
-
+        
     
 	    for(int i=0; i<iphones.size();i++) {
 	    	for(int j=i; j<=i;j++) {

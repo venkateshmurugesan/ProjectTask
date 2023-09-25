@@ -6,4 +6,14 @@
       <class name="org.adactin.Mainn"/>
     </classes>
   </test> <!-- Default test -->
+  <test name="Default test(failed)">
+    <classes>
+      <class name="org.adactin.Mainn">
+        <methods>
+          <include name="test1"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- org.adactin.Mainn -->
+    </classes>
+  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
