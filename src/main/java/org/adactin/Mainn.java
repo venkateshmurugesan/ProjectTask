@@ -15,6 +15,12 @@ public class Mainn extends Base {
 		browserLaunch("edge");
 		implicitlywait(10);
 	}
+	
+	@AfterMethod
+	private void after() {
+		
+	}
+	
 	@Test
 	public  void test1() throws InterruptedException {
         urlLaunch("https://adactinhotelapp.com/");
@@ -22,7 +28,7 @@ public class Mainn extends Base {
 		sendKeys(r.getUsername(), "venkat1210");
 		sendKeys(r.getPassord(), "987654321");
 		click(r.getBtnLogin());
-		System.out.println("-----Account logged in successfully-----");
+		System.out.println("Account logged in successfully...");
 		selectByIndex(r.getLocation(), 4);
 		selectByIndex(r.getHotels(), 2);
 		selectByIndex(r.getRooms(), 1);
@@ -45,9 +51,9 @@ public class Mainn extends Base {
 		sendKeys(r.getCvv(), "321");
 		click(r.getBookNow());
 		implicitlywait(20);
-		System.out.println("-----Room Booked Sucessfully-----");
+		System.out.println("Room Booked Sucessfully...");
 		String currentOrderId = getAttribute(r.getOrderId());
-		System.out.println("-----Your Id is-----\n"+currentOrderId);
+		System.out.println("Your Id is...\n"+currentOrderId);
 		click(r.getBookeditnerary());
 		
 		List<WebElement> orderId = driver.findElements(By.xpath("//input[@type='button']"));
@@ -59,10 +65,9 @@ public class Mainn extends Base {
 			click(click);
 			Alert a=driver.switchTo().alert();
 			a.accept();
-			System.out.println("Cancelled booking Id is\n"+currentId);
+			System.out.println("Cancelled booking Id is...\n"+currentId);
 			}
 		}		
-		System.out.println("-----Room Cancelled Sucessfully-----");
 
 //		List<WebElement> checkbox = driver.findElements(By.xpath("//input[@type='checkbox']"));
 //		click(checkbox.get(checkbox.size()-1));
