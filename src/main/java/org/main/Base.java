@@ -9,6 +9,8 @@ import java.io.IOException;
 import java.sql.Date;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Set;
 
 import org.apache.commons.io.FileUtils;
@@ -251,6 +253,15 @@ public class Base {
 	public static void refresh() {
 		driver.navigate().refresh();
 	}
+	
+	//Windows switch
+		public static String switchWindows(int a) {
+			Set<String> allId = driver.getWindowHandles();
+			List<String> li=new ArrayList<String>();
+			li.addAll(allId);
+			driver.switchTo().window(li.get(a));
+			return null;
+		}
 	
 	//Frames
 	

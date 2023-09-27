@@ -1,86 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="1" passed="0">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="57881" started-at="2023-09-25T19:35:22Z" finished-at="2023-09-25T19:36:20Z">
+  <suite name="Default suite" duration-ms="96382" started-at="2023-09-27T10:37:14Z" finished-at="2023-09-27T10:38:51Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="57881" started-at="2023-09-25T19:35:22Z" finished-at="2023-09-25T19:36:20Z">
-      <class name="org.adactin.Mainn">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:org.adactin.Mainn@1324409e]" name="beforeClass" is-config="true" duration-ms="15892" started-at="2023-09-26T01:05:22Z" finished-at="2023-09-26T01:05:38Z">
+    <test name="Default test" duration-ms="96382" started-at="2023-09-27T10:37:14Z" finished-at="2023-09-27T10:38:51Z">
+      <class name="org.Amazon.Mobile">
+        <test-method status="PASS" signature="bf()[pri:0, instance:org.Amazon.Mobile@1324409e]" name="bf" is-config="true" duration-ms="33710" started-at="2023-09-27T16:07:15Z" finished-at="2023-09-27T16:07:48Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="FAIL" signature="test1()[pri:0, instance:org.adactin.Mainn@1324409e]" name="test1" duration-ms="41934" started-at="2023-09-26T01:05:38Z" finished-at="2023-09-26T01:06:20Z">
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
-            <message>
-              <![CDATA[stale element reference: stale element not found
-  (Session info: MicrosoftEdge=117.0.2045.41)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: '4.10.0', revision: 'c14d967899'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_371'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [d22fefd9ce5b7abe0871232bb8ec9a22, getElementAttribute {id=0EEAAB6318D0D5A7B1749D026B38F953_element_320, name=value}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 117.0.2045.41, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:58153}, msedge: {msedgedriverVersion: 117.0.2045.41 (b895513e9807..., userDataDir: C:\Users\venka\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58153/devtoo..., se:cdpVersion: 117.0.2045.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: msedge on windows (d22fefd9ce5b7abe0871232bb8ec9a22)] -> xpath: //input[@type='button']]
-Session ID: d22fefd9ce5b7abe0871232bb8ec9a22]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
-  (Session info: MicrosoftEdge=117.0.2045.41)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: '4.10.0', revision: 'c14d967899'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_371'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [d22fefd9ce5b7abe0871232bb8ec9a22, getElementAttribute {id=0EEAAB6318D0D5A7B1749D026B38F953_element_320, name=value}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 117.0.2045.41, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:58153}, msedge: {msedgedriverVersion: 117.0.2045.41 (b895513e9807..., userDataDir: C:\Users\venka\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58153/devtoo..., se:cdpVersion: 117.0.2045.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: msedge on windows (d22fefd9ce5b7abe0871232bb8ec9a22)] -> xpath: //input[@type='button']]
-Session ID: d22fefd9ce5b7abe0871232bb8ec9a22
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:242)
-	at org.openqa.selenium.remote.RemoteWebElement.getAttribute(RemoteWebElement.java:150)
-	at org.adactin.Mainn.test1(Mainn.java:55)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+        </test-method> <!-- bf -->
+        <test-method status="PASS" signature="test1()[pri:0, instance:org.Amazon.Mobile@1324409e]" name="test1" duration-ms="62574" started-at="2023-09-27T16:07:48Z" finished-at="2023-09-27T16:08:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-      </class> <!-- org.adactin.Mainn -->
+        <test-method status="PASS" signature="afterclass()[pri:0, instance:org.Amazon.Mobile@1324409e]" name="afterclass" is-config="true" duration-ms="4" started-at="2023-09-27T16:08:51Z" finished-at="2023-09-27T16:08:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterclass -->
+      </class> <!-- org.Amazon.Mobile -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
