@@ -16,6 +16,8 @@ public class POM extends Base {
 	@FindBy(xpath="//button[@class='_2KpZ6l _2doB4z']")
 	private WebElement close;
 	
+	@FindBy (xpath="//span[@role='button']")
+	private WebElement closes;
 	
 	@FindBy(xpath="//button[@type='submit']")
 	private WebElement search;
@@ -24,7 +26,8 @@ public class POM extends Base {
 	@FindBy(xpath="(//div[@class='_4rR01T'])[1]")
 	private WebElement iphone;
 	
-	
+	@FindBy(xpath="//span[text()='Next']")
+	private WebElement next;
 	
 	public WebElement getTxtSearch() {
 		return txtSearch;
@@ -40,4 +43,13 @@ public class POM extends Base {
 	public WebElement getClose() {
 		return close;
 	}
+
+	public WebElement getCloses() {
+		return closes;
+	}
+
+	public WebElement getNext() {
+		return next;
+	}
+	
 }
