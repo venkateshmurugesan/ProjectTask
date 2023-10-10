@@ -93,5 +93,17 @@ public class SortMinMax extends Base {
 //	    System.out.println("=====Mobile Names=====\n"+name);
 //	    System.out.println("=====Mobile Prices=====\n"+price);
 	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
 	    }
 	}
